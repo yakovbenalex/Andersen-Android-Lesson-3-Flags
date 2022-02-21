@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Andersen Android Lesson 3 Flags</string>
+    <string name="label_cities_flags">Cities flags</string>
 </resources>

@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView_label_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_cities_flags"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/flag_austria"
+            layout="@layout/flag_austria"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintTop_toBottomOf="@+id/textView_label_app" />
+
+        <include
+            android:id="@+id/flag_poland"
+            layout="@layout/flag_poland"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintDimensionRatio="8:5"
+            app:layout_constraintTop_toBottomOf="@+id/flag_austria"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <include
+            android:id="@+id/flag_italy"
+            layout="@layout/flag_italy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintTop_toBottomOf="@+id/flag_poland" />
+
+        <include
+            android:id="@+id/flag_colombia"
+            layout="@layout/flag_colombia"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintTop_toBottomOf="@+id/flag_italy" />
+
+        <include
+            android:id="@+id/flag_madagascar"
+            layout="@layout/flag_madagascar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintTop_toBottomOf="@+id/flag_italy" />
+
+        <include
+            android:id="@+id/flag_thailand"
+            layout="@layout/flag_thailand"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintTop_toBottomOf="@+id/flag_madagascar" />
+
+        <include
+            android:id="@+id/flag_denmark"
+            layout="@layout/flag_denmark"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintDimensionRatio="37:28"
+            app:layout_constraintTop_toBottomOf="@+id/flag_thailand" />
+
+        <include
+            android:id="@+id/flag_switzerland"
+            layout="@layout/flag_switzerland"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/flag_denmark" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
