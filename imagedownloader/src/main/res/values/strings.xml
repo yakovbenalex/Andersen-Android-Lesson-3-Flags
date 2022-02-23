@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Image downloader</string>
+    <string name="button_load_picasso">Load by Picasso</string>
+    <string name="button_load_android">Load by Android</string>
+    <string name="image_url_default">https://static.andersenlab.com/andersenlab/new-andersensite/logo-social.png</string>
+    <string name="image_from_url">Image from URL</string>
 </resources>
